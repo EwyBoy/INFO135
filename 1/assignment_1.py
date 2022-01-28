@@ -4,9 +4,11 @@
 # Task 1 til 4 kan alle kjøres med denne filen i terminalen.
 # Krever python 3.10 pga switch statement.
 
+
 # -------------------------------------------------------------------------------------------------------------------------------
 # --- Task 1 --------------------------------------------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------------------------------------------------------
+
 
 # Her er svarene til Task 1 i tilfelle du ikke får kjørt oppgaven i terminalen.
 # Svarene er rundet opp siden det ikke er mulig å ha 17.3876471435 steps i et binary search.
@@ -17,23 +19,25 @@
 
 import math
 
+
 class Dictionary:
     def __init__(self, language, words):
         self.language = language
-        self.words = words    
+        self.words = words
 
     def calculate_steps(self):
         return math.ceil(math.log2(self.words))
 
     def find_steps_in_binary_search(self):
         print(f"{self.language} dictionary with {self.words} words takes {self.calculate_steps()} steps to find a word in a worst case senario.")
-       
+
 
 def task_1():
     Dictionary("Persian", 171476).find_steps_in_binary_search()
     Dictionary("English", 1100373).find_steps_in_binary_search()
     Dictionary("Chinese", 260000).find_steps_in_binary_search()
     main()
+
 
 # -------------------------------------------------------------------------------------------------------------------------------
 # --- Task 2 --------------------------------------------------------------------------------------------------------------------
@@ -47,21 +51,25 @@ class Student:
         self.country = country
 
     def greeting(self):
-        print(f"Hei! my name is {self.name}\nI am {self.age} years old.\nI am from {self.country}.")
+        print(
+            f"Hei! my name is {self.name}\nI am {self.age} years old.\nI am from {self.country}.")
 
 
 def task_2():
     Student("Sara", 25, "Norway").greeting()
     main()
 
+
 # -------------------------------------------------------------------------------------------------------------------------------
 # --- Task 3 --------------------------------------------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------------------------------------------------------
+
 
 class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
+
 
 class LinkedList:
     def __init__(self):
@@ -72,6 +80,7 @@ class LinkedList:
         while temp:
             print(temp.data)
             temp = temp.next
+
 
 def test_linked_list():
  # Create a linked list object
@@ -89,22 +98,28 @@ def test_linked_list():
     linked_list.print_list()
 
 # Linked list demonstration
+
+
 def task_3():
     test_linked_list()
     main()
+
 
 # -------------------------------------------------------------------------------------------------------------------------------
 # --- Task 4 --------------------------------------------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------------------------------------------------------
 
+
 list = [1, 2, 3, 4, 5]
 
 # Takes a list, builds a stack and returns a new list in reverse
+
+
 def reverse_list(list):
     # Creates empty stack and list
     stack = []
     new_list = []
-    
+
     # Pushes all elements from list to stack
     for element in list:
         stack.append(element)
@@ -112,21 +127,24 @@ def reverse_list(list):
     # Pops all elements from stack and adds them to new list
     for element in range(len(stack)):
         new_list.append(stack.pop())
-    
+
     # Prints new reversed list
     print(new_list)
-    
+
 
 def task_4():
     reverse_list(list)
     main()
 
+
 # ---------------------------------------------------------------------------------------------------------------------------------------
 # --- Run Assignment --------------------------------------------------------------------------------------------------------------------
 # ---------------------------------------------------------------------------------------------------------------------------------------
 
+
 def main():
-    print('\nAvaliable runnable tasks:\n' + '1 :: Task 1' + '\n' + '2 :: Task 2' + '\n' + '3 :: Task 3' + '\n' + '4 :: Task 4' + '\n' + 'x :: Exit')
+    print('\nAvaliable runnable tasks:\n' + '1 :: Task 1' + '\n' + '2 :: Task 2' +
+          '\n' + '3 :: Task 3' + '\n' + '4 :: Task 4' + '\n' + 'x :: Exit')
     task = str(input("Input the number of the task you want to run: "))
     print('\n')
     match task:
@@ -141,12 +159,13 @@ def main():
         case 'x':
             exit()
         case _:
-            invalid_task()            
+            invalid_task()
 
 
 def invalid_task():
     print("Invalid task number. Please try again.")
     main()
+
 
 # This tells python where to start the program
 if __name__ == "__main__":
