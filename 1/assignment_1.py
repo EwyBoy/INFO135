@@ -98,8 +98,6 @@ def test_linked_list():
     linked_list.print_list()
 
 # Linked list demonstration
-
-
 def task_3():
     test_linked_list()
     main()
@@ -113,8 +111,6 @@ def task_3():
 list = [1, 2, 3, 4, 5]
 
 # Takes a list, builds a stack and returns a new list in reverse
-
-
 def reverse_list(list):
     # Creates empty stack and list
     stack = []
