@@ -143,19 +143,18 @@ def main():
           '\n' + '3 :: Task 3' + '\n' + '4 :: Task 4' + '\n' + 'x :: Exit')
     task = str(input("Input the number of the task you want to run: "))
     print('\n')
-    match task:
-        case '1':
-            task_1()
-        case '2':
-            task_2()
-        case '3':
-            task_3()
-        case '4':
-            task_4()
-        case 'x':
-            exit()
-        case _:
-            invalid_task()
+    if task == '1':
+        task_1()
+    elif task == '2':
+        task_2()
+    elif task == '3':
+        task_3()
+    elif task == '4':
+        task_4()
+    elif task == 'x':
+        exit()
+    else:
+        invalid_task() 
 
 
 def invalid_task():

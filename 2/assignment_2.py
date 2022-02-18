@@ -1,4 +1,4 @@
-# 28.01.2022 - Laget av Eivind Norling
+# 18.02.2022 - Laget av Eivind Norling
 
 # Har laget oppgaven som en kjørbar fil.
 # Task 1 til 4 kan alle kjøres med denne filen i terminalen.
