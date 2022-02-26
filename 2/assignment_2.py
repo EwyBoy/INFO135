@@ -40,17 +40,15 @@ def task_2():
     main()    
 
 # Boble sort and break after 3 passes
-def boble_sort(list_to_sort):
-    for i in range(len(list_to_sort)):
-        for j in range(len(list_to_sort) - 1, i, -1):
-            if list_to_sort[j] < list_to_sort[j - 1]:
-                list_to_sort[j], list_to_sort[j - 1] = list_to_sort[j - 1], list_to_sort[j]
-                print("Pass: " + str(i + 1), list_to_sort)
-            else:
-                break
-        print("Pass: " + str(i + 1), list_to_sort)    
+def boble_sort(sort_list):
+    for i in range(len(sort_list)):
+        for j in range(len(sort_list) - 1):
+            if sort_list[j] > sort_list[j + 1]:
+                sort_list[j], sort_list[j + 1] = sort_list[j + 1], sort_list[j]
+                print("Pass: " + str(i + 1), sort_list)
         if i >= 2:
-            break       
+            break
+    return sort_list    
 
 # -------------------------------------------------------------------------------------------------------------------------------
 # --- Task 3 --------------------------------------------------------------------------------------------------------------------
