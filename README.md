@@ -1,7 +1,8 @@
 # INFO135 22V / Advanced Programming
 ## University of Bergen
 
-Assignment:
+Assignment:  
+
 [x] - [Assignment 1](https://github.com/EwyBoy/INFO135/blob/master/1/assignment_1.py)  
 [x] - [Assignment 2](https://github.com/EwyBoy/INFO135/blob/master/2/assignment_2.py)  
 [x] - [Assignment 3](https://github.com/EwyBoy/INFO135/blob/master/3/assignment_3.py)  
