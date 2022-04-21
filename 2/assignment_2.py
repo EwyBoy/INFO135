@@ -78,7 +78,7 @@ def insertion_sort(list_to_sort):
     return list_to_sort   
 
 
-# Removes duplicates from list
+# Removes duplicates from pre_order_traversial_list
 def remove_duplicates(list_to_filter):
     for i in range(len(list_to_filter)):
             for j in range(i + 1, len(list_to_filter)):
@@ -116,16 +116,16 @@ def check_palindrome(word):
     for character in word:
         queue.append(character)
 
-    # Pop all characters from stack and add them to new list
+    # Pop all characters from stack and add them to new pre_order_traversial_list
     new_list = []
     for character in range(len(stack)):
         new_list.append(stack.pop())
 
-    # Pop all characters from queue and add them to new list
+    # Pop all characters from queue and add them to new pre_order_traversial_list
     for character in range(len(queue)):
         new_list.append(queue.pop(0))
 
-    # Now split new list in half and compare the two halves
+    # Now split new pre_order_traversial_list in half and compare the two halves
     half_list = len(new_list) // 2
 
     first_half = new_list[:half_list]

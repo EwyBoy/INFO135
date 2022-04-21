@@ -30,13 +30,13 @@ class BinaryTree:
             new_node.right = self.right
             self.right = new_node
 
-    def is_compleate_binary_tree(self):
+    def is_complete_binary_tree(self):
         if self.left is None and self.right is None:
             return True
         elif self.left is None or self.right is None:
             return False
         else:
-            return self.left.is_compleate_binary_tree() and self.right.is_compleate_binary_tree()
+            return self.left.is_complete_binary_tree() and self.right.is_complete_binary_tree()
 
 
 
@@ -105,14 +105,14 @@ def build_binary_tree_3():
     return node_a
 
 
-# They are all compleate binary trees
+# They are all complete binary trees
 def task_1():
     tree_1 = build_binary_tree_1()
-    print('Is the tree compleate? ', tree_1.is_compleate_binary_tree())
+    print('Is the tree complete? ', tree_1.is_complete_binary_tree())
     tree_2 = build_binary_tree_2()
-    print('Is the tree compleate? ', tree_2.is_compleate_binary_tree())
+    print('Is the tree complete? ', tree_2.is_complete_binary_tree())
     tree_3 = build_binary_tree_3()
-    print('Is the tree compleate? ', tree_3.is_compleate_binary_tree())
+    print('Is the tree complete? ', tree_3.is_complete_binary_tree())
 
     main()
 
@@ -307,7 +307,7 @@ def task_4():
 
 # Runnable launcher
 def main():
-    print('\nAvaliable runnable tasks:\n' + '1 :: Task 1' + '\n' + '2 :: Task 2' + '\n' + '3 :: Task 3' + '\n' + '4 :: Task 4' + '\n' + 'x :: Exit')
+    print('\nAvailable runnable tasks:\n' + '1 :: Task 1' + '\n' + '2 :: Task 2' + '\n' + '3 :: Task 3' + '\n' + '4 :: Task 4' + '\n' + 'x :: Exit')
 
     task = str(input("Input the number of the task you want to run: "))
     print('\n')

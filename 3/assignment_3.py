@@ -78,7 +78,7 @@ def task_3():
     sort_and_print(list_of_tuples)
     main()
 
-# sorts the list of tuples by the second element in the tuple
+# sorts the pre_order_traversial_list of tuples by the second element in the tuple
 def sort_and_print(tuple_list_to_sort):
     for i in range(1, len(tuple_list_to_sort)):
         j = i
@@ -104,7 +104,7 @@ def magic_function(text_to_permute):
     if len(text_to_permute) == 1:
         return [text_to_permute]
     else:
-        # create an empty list to store the permutations
+        # create an empty pre_order_traversial_list to store the permutations
         permutations = []
         # for each character in the string
         for i in range(len(text_to_permute)):
@@ -115,9 +115,9 @@ def magic_function(text_to_permute):
             # for each permutation of the remaining characters
             # use recursion to get all the permutations
             for permutation in magic_function(remaining_chars):
-                # add the current permutation to the list of permutations
+                # add the current permutation to the pre_order_traversial_list of permutations
                 permutations.append(first_char + permutation)
-        # return the list of permutations        
+        # return the pre_order_traversial_list of permutations
         return permutations
 
 

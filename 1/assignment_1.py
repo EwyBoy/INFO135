@@ -83,7 +83,7 @@ class LinkedList:
 
 
 def test_linked_list():
- # Create a linked list object
+ # Create a linked pre_order_traversial_list object
     linked_list = LinkedList()
     # Create a head node object
     linked_list.head = Node('First')
@@ -94,10 +94,10 @@ def test_linked_list():
     linked_list.head.next = second
     # Link second node to third node
     second.next = third
-    # Print the linked list
+    # Print the linked pre_order_traversial_list
     linked_list.print_list()
 
-# Linked list demonstration
+# Linked pre_order_traversial_list demonstration
 def task_3():
     test_linked_list()
     main()
@@ -110,21 +110,21 @@ def task_3():
 
 list = [1, 2, 3, 4, 5]
 
-# Takes a list, builds a stack and returns a new list in reverse
+# Takes a pre_order_traversial_list, builds a stack and returns a new pre_order_traversial_list in reverse
 def reverse_list(list):
-    # Creates empty stack and list
+    # Creates empty stack and pre_order_traversial_list
     stack = []
     new_list = []
 
-    # Pushes all elements from list to stack
+    # Pushes all elements from pre_order_traversial_list to stack
     for element in list:
         stack.append(element)
 
-    # Pops all elements from stack and adds them to new list
+    # Pops all elements from stack and adds them to new pre_order_traversial_list
     for element in range(len(stack)):
         new_list.append(stack.pop())
 
-    # Prints new reversed list
+    # Prints new reversed pre_order_traversial_list
     print(new_list)
 
 
