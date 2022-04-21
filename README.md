@@ -8,5 +8,5 @@
 - [x] [Assignment 3](https://github.com/EwyBoy/INFO135/blob/master/3/assignment_3.py)  
 - [x] [Assignment 4](https://github.com/EwyBoy/INFO135/blob/master/4/assignment_4.py)  
 - [x] [Assignment 5](https://github.com/EwyBoy/INFO135/blob/master/5/assignment_5.py)  
-- [ ] [Assignment 6](https://github.com/EwyBoy/INFO135/blob/master/6/assignment_6.py)  
+- [x] [Assignment 6](https://github.com/EwyBoy/INFO135/blob/master/6/assignment_6.py)  
 - [ ] [Assignment 7](https://github.com/EwyBoy/INFO135/blob/master/7/assignment_7.py)  
